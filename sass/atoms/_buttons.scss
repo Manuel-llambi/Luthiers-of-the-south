@@ -1,0 +1,24 @@
+.primario {
+  @include flex-r($gap: 4px);
+  @include boton-secondary($pad: $spacing-8px $spacing-12px);
+  font-size: $semi-small-16px;
+  font-weight: $bold;
+}
+
+// Our work
+
+.sub-our-work {
+  button {
+    @include flex-r();
+    @include boton-tericiary();
+    padding: 0px;
+  }
+}
+
+.aspectos {
+  button {
+    @include flex-r($gap: $spacing-8px, $padding: 0px 0px);
+    @include boton-tericiary($color-font: $color-secondary-dark-brown,$pad: 0px 0px 0px 0px);
+    
+  }
+}

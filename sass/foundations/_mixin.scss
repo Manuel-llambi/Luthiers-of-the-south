@@ -1,0 +1,49 @@
+// Flex-box
+
+@mixin flex-c($flex:column, $justify: space-between, $align: center, $gap: 0px, $padding:0px, $margin:0px){
+    display: flex;
+    flex-direction: $flex;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+    margin: $margin;
+    padding: $padding;
+}
+
+@mixin flex-r($flex:row, $justify: space-between, $align: center, $gap: 0px, $padding:0px, $margin:0px){
+    display: flex;
+    flex-direction: $flex;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+    margin: $margin;
+    padding: $padding;
+}
+
+// Botones
+
+@mixin boton-primary($bg-color:$color-primary-gold, $color-font:$color-black, $pad:$spacing-24px, $font-weight:$semi-bold, $radius:$radius-8px){
+    color: $color-font;
+    padding: $pad $spacing-20px;
+    font-weight: $font-weight;
+    border-radius: $radius-8px;
+}
+
+@mixin boton-secondary($color-font:$color-primary-gold, $pad:$spacing-24px $spacing-12px, $font-weight:$bold, $border: solid 3px $color-primary-gold, $background: transparent){
+    color: $color-font;
+    padding: $pad;
+    font-weight: $font-weight;
+    border: $border;
+    border-radius: $radius-8px;
+    background-color: $background;
+    
+}
+
+@mixin boton-tericiary($color-font:$color-primary-gold, $pad:$spacing-16px, $font-weight:$bold){
+    color: $color-font;
+    padding: $pad $spacing-20px;
+    font-weight: $font-weight;
+    border: none;
+    background-color: transparent;
+    
+}

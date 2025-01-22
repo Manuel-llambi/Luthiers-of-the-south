@@ -1,0 +1,108 @@
+// Generales
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "Montserrat", serif;
+}
+
+// Tipografia
+
+$font-elegant: "Merriweather", serif;
+$font-montserrat: "Montserrat", serif;
+
+// Colores
+
+$color-primary-gold: #f0b873;
+$color-secondary-brown-soft: #b86c29;
+$color-secondary-dark-brown: #5e3400;
+$color-terciary-light-yellow: #fffae9;
+$color-terciary-dark-brown: #493011;
+$color-white: #ffffff;
+$color-black: #000000;
+$color-grey: #828282;
+
+// Font size
+
+$small-12px: 0.75rem;
+$semi-small-16px: 1rem;
+$media: 1.25rem;
+$semi-medium-24px: 1.5rem;
+$big-28px: 1.75rem;
+$semi-big-32px: 2rem;
+$huge-40px: 2.5rem;
+$semi-huge-48px: 3rem;
+
+// Font weight
+
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+
+// Spacing
+
+$spacing-8px: 8px;
+$spacing-12px: 0.75rem;
+$spacing-16px: 1rem;
+$spacing-20px: 1.25rem;
+$spacing-24px: 1.5rem;
+$spacing-28px: 1.75rem;
+$spacing-32px: 2rem;
+$spacing-42px: 42px;
+$spacing-52px: 3.25rem;
+$spacing-60px: 3.75rem;
+$spacing-70px: 4.375rem;
+$spacing-100px: 6.25rem;
+
+// Radius
+
+$radius-8px: 8px;
+
+// Titulos
+
+h1 {
+  font-size: $semi-big-32px;
+  font-weight: $regular;
+  font-family: "Merriweather", serif;
+  color: $color-white;
+}
+
+h2 {
+  font-weight: $semi-bold;
+  color: $color-white;
+  font-size: $semi-medium-24px;
+  font-family: "Merriweather", serif;
+  text-align: start;
+}
+
+h2.black {
+  color: $color-black;
+}
+
+h3 {
+  font-size: $media;
+  font-weight: $semi-bold;
+  text-align: start;
+  color: $color-white;
+}
+
+h4 {
+  font-size: $media;
+  font-weight: $semi-bold;
+  text-align: start;
+}
+
+figcaption {
+  p {
+    color: $color-white;
+  }
+}
+
+.subtitulo {
+  p.black {
+    color: $color-black;
+  }
+}

@@ -1,0 +1,9 @@
+figure {
+  @include flex-c($gap: $spacing-32px);
+  width: 100%;
+}
+
+.card-producto {
+  @include flex-c($gap: 20px, $justify: start, $align: start);
+  
+}

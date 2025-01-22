@@ -1,0 +1,25 @@
+.navbar {
+  @include flex-r();
+  padding: $spacing-42px $spacing-24px;
+  background-color: transparent;
+}
+
+.logo {
+  @include flex-r($gap: 4px);
+}
+
+.logo {
+  p {
+    font-size: $semi-small-16px;
+    font-size: $font-elegant;
+    color: $color-white;
+    text-align: start;
+  }
+}
+
+.logo {
+  img {
+    border-right: solid 1px white;
+    padding-right: 4px;
+  }
+}

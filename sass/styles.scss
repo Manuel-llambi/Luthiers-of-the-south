@@ -1,0 +1,31 @@
+
+// Foundations
+@import "foundations/mixin";
+@import "foundations/media-queries";
+@import "foundations/variables";
+@import "foundations/fondo";
+
+
+// Molecules
+
+@import "molecules/carusel";
+@import "molecules/form";
+@import "molecules/navbar";
+@import "molecules/subtitles";
+@import "molecules/values";
+
+// Atoms
+
+@import "atoms/section";
+@import "atoms/buttons";
+@import "atoms/cards";
+@import "atoms/inputs";
+
+// Templates
+
+@import "template/contact-us";
+@import "template/footer";
+@import "template/start";
+@import "template/testimonies";
+@import "template/value";
+
