@@ -1,0 +1,27 @@
+figcaption {
+    @include flex-c(
+      $gap: $spacing-16px,
+      $justify: start,
+      $align: start,
+      $padding: 0px 0px 0px $spacing-16px
+    );
+    border-left: solid 4px $color-primary-gold;
+  }
+  
+  figcaption {
+    p {
+      text-align: start;
+      font-weight: $regular;
+    }
+  }
+  .seccion-valores {
+    figure {
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: $radius-8px;
+        border-bottom: $spacing-12px solid $color-primary-gold;
+        border-left: $spacing-12px solid $color-primary-gold;
+      }
+    }
+  }

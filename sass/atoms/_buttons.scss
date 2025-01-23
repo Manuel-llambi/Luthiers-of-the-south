@@ -22,3 +22,12 @@
     
   }
 }
+
+// Form
+
+.enviar{
+  @include boton-primary();
+  width: 100%;
+  font-size: $media;
+    
+}

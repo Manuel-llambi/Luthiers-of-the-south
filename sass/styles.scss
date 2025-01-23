@@ -1,10 +1,9 @@
-
 // Foundations
 @import "foundations/mixin";
 @import "foundations/media-queries";
 @import "foundations/variables";
 @import "foundations/fondo";
-
+@import "foundations/animation";
 
 // Molecules
 
@@ -12,7 +11,6 @@
 @import "molecules/form";
 @import "molecules/navbar";
 @import "molecules/subtitles";
-@import "molecules/values";
 
 // Atoms
 
@@ -27,5 +25,4 @@
 @import "template/footer";
 @import "template/start";
 @import "template/testimonies";
-@import "template/value";
-
+@import "template/values";

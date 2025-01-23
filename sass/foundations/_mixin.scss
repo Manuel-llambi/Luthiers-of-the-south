@@ -22,11 +22,12 @@
 
 // Botones
 
-@mixin boton-primary($bg-color:$color-primary-gold, $color-font:$color-black, $pad:$spacing-24px, $font-weight:$semi-bold, $radius:$radius-8px){
+@mixin boton-primary($bg-color:$color-primary-gold, $color-font:$color-black, $pad:$spacing-16px, $font-weight:$semi-bold, $radius:$radius-8px){
     color: $color-font;
     padding: $pad $spacing-20px;
     font-weight: $font-weight;
     border-radius: $radius-8px;
+    background-color: $bg-color;
 }
 
 @mixin boton-secondary($color-font:$color-primary-gold, $pad:$spacing-24px $spacing-12px, $font-weight:$bold, $border: solid 3px $color-primary-gold, $background: transparent){

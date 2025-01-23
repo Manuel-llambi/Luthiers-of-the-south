@@ -1,0 +1,23 @@
+// Subtitulo
+
+.values,.fondo-form {
+  background-color: $color-secondary-dark-brown;
+}
+
+.subtitulo {
+  @include flex-c(
+    $justify: start,
+    $align: start,
+    $gap: $spacing-20px,
+    $padding: 0px
+  );
+}
+
+.subtitulo {
+  p {
+    font-size: $semi-small-16px;
+    font-weight: $regular;
+    text-align: start;
+    color: $color-white;
+  }
+}

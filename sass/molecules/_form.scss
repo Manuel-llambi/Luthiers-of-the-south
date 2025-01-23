@@ -1,0 +1,21 @@
+form {
+  @include flex-c($justify: start, $align: start);
+  width: 100%;
+}
+
+input,
+textarea {
+  height: 42px;
+  width: 100%;
+  border: none;
+  margin-bottom: $spacing-42px;
+}
+
+textarea {
+  height: 260px;
+}
+
+label {
+  color: $color-white;
+  margin-bottom: $spacing-12px;
+}

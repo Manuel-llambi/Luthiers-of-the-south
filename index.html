@@ -34,8 +34,10 @@
 
         <section class="primera-screen">
             <div class="presentacion">
-                <h1>A <span>legacy</span> reflected in quality instruments</h1>
-                <p>Instrument craftsmen since 1942. <br> There is a guitar for every musician, discover yours.</p>
+                <div class="titulo1">
+                    <h1>A <span>legacy</span> reflected in quality instruments</h1>
+                    <p>Instrument craftsmen since 1942. <br> There is a guitar for every musician, discover yours.</p>
+                </div>
                 <button class="primario">Find your guitar
                     <img src="img/Keyboard arrow up.svg" alt="">
                 </button>
@@ -157,7 +159,7 @@
             <div><img src="img/julian.png" alt=""></div>
             <div><img src="img/Drexler.png" alt=""></div>
         </div>
-        <div class="carusel-logos">
+         <div class="carusel-logos">
             <li class="marcas-clientes">
                 <ul><img src="img/fender.png" alt=""></ul>
                 <ul><img src="img/daddario.png" alt=""></ul>
@@ -165,14 +167,72 @@
                 <ul><img src="img/martin e co.png" alt=""></ul>
                 <ul><img src="img/ernie ball.png" alt=""></ul>
             </li>
-        </div>
+        </div>  
 
     </section>
-    <section>
+    <section class="fondo-form">
+        <div class="subtitulo">
+            <h2>Contact us</h2>
+            <div class="subrayado"></div>
+            <p>You can reach us anytime via LuthiersoftheSouth@gmail.com</p>
+        </div>
         <form action="">
-            
+            <label for="nombre">Name:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+
+            <label for="phonenumber">Phone number</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <label for="Help">How can we help you?</label>
+            <textarea name="" id=""></textarea>
+
+            <button class="enviar">Send</button>
         </form>
     </section>
+    <footer>
+
+        <img src="img/Logo-footer.svg" alt="Logo">
+        <div class="redes">
+            <div><img src="img/Email.svg" alt="">LuthiersoftheSouth@gmail.com</div>
+            <div><img src="img/Phone.svg" alt="">215-325-9369</div>
+            <div><img src="img/Location on.svg" alt="">50 S, 16th Street, Philadelphia,PA 19102</div>
+        </div>
+        <div class="columnas">
+            <div class="categorias">
+                <h5>Company</h5>
+                <div>
+                    <p>Value</p>
+                    <p>Gallery product</p>
+                    <p>Testimonies</p>
+                    <p>Contact</p>
+                </div>
+            </div>
+            <div class="categorias">
+                <h5>Social</h5>
+                <div>
+                    <p>Instagram</p>
+                    <p>Facebook</p>
+                    <p>Twitter</p>
+                    <p>Youtube</p>
+                </div>
+            </div>
+            <div class="categorias">
+                <h5>Product</h5>
+                <div>
+                    <p>Instruments</p>
+                    <p>Accessories</p>
+                    <p>Services</p>
+
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
 
 </body>
 
