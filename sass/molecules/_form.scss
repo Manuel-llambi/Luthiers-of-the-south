@@ -9,6 +9,8 @@ textarea {
   width: 100%;
   border: none;
   margin-bottom: $spacing-42px;
+  text-align: start;
+  padding-left: $spacing-8px;
 }
 
 textarea {
@@ -18,4 +20,12 @@ textarea {
 label {
   color: $color-white;
   margin-bottom: $spacing-12px;
+}
+
+.fondo-form {
+  @include flex-c(
+    $gap: $spacing-60px,
+    $padding: $spacing-100px $spacing-24px $spacing-32px $spacing-24px,
+    $align: start
+  );
 }

@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,9 +26,26 @@
             <nav class="navbar">
                 <img src="img/Hamburguesa.svg" alt="">
                 <div class="logo">
-                    <img src="img/Icono-guitarra.svg" alt="">
+                    <img src="img/Icono-guitarra.svg" alt="Logo de la empresa">
                     <p>Luthiers <br> of the South
                     </p>
+                </div>
+            </nav>
+            <nav class="navbar-completa">
+                <div class="logo">
+                    <img src="img/Icono-guitarra.svg" alt="Logo de la empresa">
+                    <p>Luthiers <br> of the South
+                    </p>
+                </div>
+                <li class="lista-secciones">
+                    <a href="#values">Value</a>
+                    <a href="#gallery">Product Gallery</a>
+                    <a href="#testimonies">Testimonies</a>
+                    <a href="#contact">Contact</a>
+                </li>
+                <div class="botones-log">
+                    <button class="log-in">Log in</button>
+                    <button class="sign-up">Sign up</button>
                 </div>
             </nav>
         </header>
@@ -35,7 +53,7 @@
         <section class="primera-screen">
             <div class="presentacion">
                 <div class="titulo1">
-                    <h1>A <span>legacy</span> reflected in quality instruments</h1>
+                    <h1>A <i>legacy</i> reflected in quality instruments</h1>
                     <p>Instrument craftsmen since 1942. <br> There is a guitar for every musician, discover yours.</p>
                 </div>
                 <button class="primario">Find your guitar
@@ -44,7 +62,7 @@
             </div>
         </section>
     </div>
-    <section class="values">
+    <section class="values" id="values">
         <div class="subtitulo">
             <h2>The essence of our Craftsmanship</h2>
             <div class="subrayado"></div>
@@ -62,9 +80,9 @@
                     </p>
                 </figcaption>
             </figure>
-            <figure>
+            <figure class="value-inverso">
                 <img src="img/Calidad.jpg" alt="guitarra junto a troncos de madera importada de calidad">
-                <figcaption>
+                <figcaption class="inverso">
                     <h3>Quality and Perfection</h3>
                     <p>Our instruments are meticulously crafted to deliver exceptional quality and performance. From
                         the selection of premium materials to the final tuning, every step of the process is driven
@@ -84,68 +102,79 @@
             </figure>
         </div>
     </section>
-    <section>
+    <section id="gallery">
         <div class="subtitulo">
             <div class="sub-our-work">
-                <h2 class="black">Our work</h2>
-                <div class="subrayado negro"></div>
+                <div class="sub-negro">
+                    <h2 class="black">Our work</h2>
+                    <div class="subrayado negro"></div>
+                </div>
                 <button>
                     <p>Explore all products</p>
                     <img src="img/arrow down.svg" alt="">
                 </button>
             </div>
+
             <p class="black">Since our beginnings, every instrument we create is imbued with the principles that guide
                 our passion for
                 music and perfection. These values are the cornerstone of our international recognition.</p>
         </div>
-        <figure class="lista-producto">
-            <article class="card-producto">
-                <img src="img/guitarra-producto.png" alt="Foto de guitarra GS Mini Sapele" class="producto">
-                <div class="aspectos">
+        <div class="carusel">
+            <figure class="lista-producto">
+                <article class="card-producto">
                     <div>
-                        <h4>GS Mini Sapele</h4>
-                        <span>$1,500</span>
+                        <img src="img/guitarra-producto.png" alt="Foto de guitarra GS Mini Sapele" class="producto">
                     </div>
-                    <button>
-                        <p>View details</p>
-                        <img src="img/Vector.svg" alt="Flecha" class="flecha">
-                    </button>
-                </div>
-            </article>
-            <article class="card-producto">
-                <img src="img/Taylor 2.png" alt="Foto de guitarra GS Mini Sapele" class="producto">
-                <div class="aspectos">
+                    <div class="aspectos">
+                        <div>
+                            <h4>GS Mini Sapele</h4>
+                            <span>$1,500</span>
+                        </div>
+                        <button>
+                            <p>View details</p>
+                            <img src="img/Vector.svg" alt="Flecha" class="flecha">
+                        </button>
+                    </div>
+                </article>
+                <article class="card-producto">
                     <div>
-                        <h4>J-3000 Sample</h4>
-                        <span>$2,000</span>
+                        <img src="img/Taylor 2.png" alt="Foto de guitarra GS Mini Sapele" class="producto">
                     </div>
-                    <button>
-                        <p>View details</p>
-                        <img src="img/Vector.svg" alt="Flecha" class="flecha">
-                    </button>
-                </div>
-            </article>
-            <article class="card-producto">
-                <img src="img/Taylor-BBTe-2212161520-FrontLeft-2022 2.png" alt="Foto de guitarra GS Mini Sapele"
-                    class="producto">
-                <div class="aspectos">
+                    <div class="aspectos">
+                        <div>
+                            <h4>J-3000 Sample</h4>
+                            <span>$2,000</span>
+                        </div>
+                        <button>
+                            <p>View details</p>
+                            <img src="img/Vector.svg" alt="Flecha" class="flecha">
+                        </button>
+                    </div>
+                </article>
+                <article class="card-producto">
                     <div>
-                        <h4>MXI woodstock 233</h4>
-                        <span>$1,800</span>
+                        <img src="img/Taylor-BBTe-2212161520-FrontLeft-2022 2.png" alt="Foto de guitarra GS Mini Sapele"
+                            class="producto">
                     </div>
-                    <button>
-                        <p>View details</p>
-                        <img src="img/Vector.svg" alt="Flecha" class="flecha">
-                    </button>
-                </div>
-            </article>
+                    <div class="aspectos">
+                        <div>
+                            <h4>MXI woodstock 233</h4>
+                            <span>$1,800</span>
+                        </div>
+                        <button>
+                            <p>View details</p>
+                            <img src="img/Vector.svg" alt="Flecha" class="flecha">
+                        </button>
+                    </div>
+                </article>
+        </div>
 
         </figure>
 
     </section>
-    <section>
+    <section id="testimonies">
         <div class="subtitulo">
-            <div class="sub-our-work">
+            <div class="sub-negro">
                 <h2 class="black">A global reputation</h2>
                 <div class="subrayado negro"></div>
             </div>
@@ -153,24 +182,37 @@
                 musicians and brands worldwide. Celebrated for tonal excellence, our instruments grace concert halls and
                 studios, embodying a legacy of artistry and quality.</p>
         </div>
-        <div class="testimonios">
-            <div><img src="img/mayer.png" alt=""></div>
-            <div><img src="img/emmanuel.png" alt=""></div>
-            <div><img src="img/julian.png" alt=""></div>
-            <div><img src="img/Drexler.png" alt=""></div>
+        <div class="musicos">
+            <div class="artistas">
+                <div class="frase">
+                    <p>"Every note resonates with the passion and tradition poured into its creation. It’s
+                        more than just a guitar; it’s a piece of art.</p>
+                    <span>John Mayer</span>
+                </div>
+
+            </div>
+            <div class="artistas">
+                <div class="frase">
+                    <p>"It’s a privilege to play guitars that combine history, passion, and perfection in every detail."</p>
+                    <span>Julian Laige</span>
+                </div>
+            </div>
+            <div class="artistas">
+                <div class="frase">
+                    <p>"These luthiers have turned wood into pure sonic poetry."</p>
+                    <span>Jorge Drexler</span>
+                </div>
+            </div>
+            <div class="artistas">
+                <div class="frase">
+                    <p>"Playing their guitars feels like an extension of my heart and hands—truly a masterpiece of tradition and passion."</p>
+                    <span>Tommy Emmanuel</span>
+                </div>
+            </div>
         </div>
-         <div class="carusel-logos">
-            <li class="marcas-clientes">
-                <ul><img src="img/fender.png" alt=""></ul>
-                <ul><img src="img/daddario.png" alt=""></ul>
-                <ul><img src="img/gibson.png" alt=""></ul>
-                <ul><img src="img/martin e co.png" alt=""></ul>
-                <ul><img src="img/ernie ball.png" alt=""></ul>
-            </li>
-        </div>  
 
     </section>
-    <section class="fondo-form">
+    <section class="fondo-form" id="contact">
         <div class="subtitulo">
             <h2>Contact us</h2>
             <div class="subrayado"></div>
@@ -194,13 +236,15 @@
         </form>
     </section>
     <footer>
-
-        <img src="img/Logo-footer.svg" alt="Logo">
-        <div class="redes">
-            <div><img src="img/Email.svg" alt="">LuthiersoftheSouth@gmail.com</div>
-            <div><img src="img/Phone.svg" alt="">215-325-9369</div>
-            <div><img src="img/Location on.svg" alt="">50 S, 16th Street, Philadelphia,PA 19102</div>
+        <div class="footer-seccion1">
+            <img src="img/Logo-footer.svg" alt="Logo" class="logo-footer">
+            <div class="redes">
+                <div><img src="img/Email.svg" alt="">LuthiersoftheSouth@gmail.com</div>
+                <div><img src="img/Phone.svg" alt="">215-325-9369</div>
+                <div><img src="img/Location on.svg" alt="">50 S, 16th Street, Philadelphia, PA 19102</div>
+            </div>
         </div>
+
         <div class="columnas">
             <div class="categorias">
                 <h5>Company</h5>
@@ -238,3 +282,8 @@
 
 
 </html>
+
+<!-- 
+
+ Investigar la importacion de menu hamburguesa
+ Aplicar hovers -->

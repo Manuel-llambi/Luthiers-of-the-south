@@ -4,6 +4,8 @@ figure {
 }
 
 .card-producto {
-  @include flex-c($gap: 20px, $justify: start, $align: start);
+  @include flex-c($gap: 20px, $justify: center, $align: center, $padding: $spacing-20px);
+  width: 100%;
+  
   
 }

@@ -1,8 +1,9 @@
 .primario {
   @include flex-r($gap: 4px);
-  @include boton-secondary($pad: $spacing-8px $spacing-12px);
+  @include boton-secondary();
   font-size: $semi-small-16px;
   font-weight: $bold;
+  transition: 0.3s ease-in-out;
 }
 
 // Our work
@@ -12,13 +13,15 @@
     @include flex-r();
     @include boton-tericiary();
     padding: 0px;
+    transition: 0.3s ease-in-out;
   }
 }
 
 .aspectos {
   button {
-    @include flex-r($gap: $spacing-8px, $padding: 0px 0px);
+    @include flex-r($gap: $spacing-16px, $padding: 0px 0px);
     @include boton-tericiary($color-font: $color-secondary-dark-brown,$pad: 0px 0px 0px 0px);
+    font-weight: $regular;
     
   }
 }

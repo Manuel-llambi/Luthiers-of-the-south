@@ -2,20 +2,20 @@
 
 section {
   @include flex-c(
-    $justify: start,
-    $align: start,
     $gap: $spacing-60px,
-    $padding: $spacing-100px $spacing-24px $spacing-32px $spacing-24px
+    $padding: $spacing-100px $spacing-24px $spacing-52px $spacing-24px
   );
 }
 
 .presentacion {
   @include flex-c($gap: $spacing-42px);
+  max-width: 700px;
 }
 
 .presentacion {
   .titulo1 {
     @include flex-c($gap: $spacing-24px);
+    width: 100%;
   }
 }
 
@@ -25,13 +25,14 @@ section {
     font-weight: $regular;
     font-family: "Montserrat", serif;
     color: $color-white;
+    width: 100%;
   }
 }
 
 h1 {
-  span {
+  i {
     color: $color-primary-gold;
-    font-weight: $semi-bold;
+    font-weight: $medium;
   }
 }
 
@@ -57,6 +58,10 @@ h1 {
   }
 }
 
+.sub-negro {
+  @include flex-c($gap: $spacing-16px, $align: start);
+}
+
 .sub-our-work {
   @include flex-c($gap: $spacing-20px, $justify: start, $align: start);
 }
@@ -66,6 +71,7 @@ h1 {
     p {
       color: $color-secondary-dark-brown;
       font-weight: $bold;
+      
     }
   }
 }
@@ -73,7 +79,8 @@ h1 {
 // Product gallery
 
 .aspectos {
-  @include flex-c($align: start, $justify: start, $gap: $spacing-8px);
+  @include flex-c($align: start, $justify: start, $gap: $spacing-16px);
+  width: 100%;
 }
 
 .aspectos {
@@ -111,27 +118,96 @@ h1 {
   height: auto;
 }
 
+.carusel {
+  width: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  display: flex;
+  justify-content: center;
+  scroll-behavior: smooth;
+}
+
 .lista-producto {
   display: grid;
+  justify-items: center;
+  align-items: start;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
   gap: $spacing-28px;
+  height: 100%;
 }
 
 //  Testimonies
 
-.testimonios {
-  @include flex-c($gap: $spacing-20px);
-  width: 100%;
+.musicos {
+  @include flex-c($gap: $spacing-24px);
+  height: 1000px;
+  width: 80%;
 }
 
-.testimonios {
-  div {
-    img {
-      object-fit: cover;
-      width: 100%;
-      filter: brightness(50%);
-    }
+.musicos {
+  .artistas {
+    display: flex;
+    flex: 1;
+    height: 200px;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-position: bottom;
+    transition: 0.3s ease-in-out;
+    filter: brightness(60%);
+  }
+
+  .artistas:nth-child(1) {
+    background-image: url("/img/mayer.png");
+  }
+  .artistas:nth-child(2) {
+    background-image: url("/img/julian.png");
+  }
+  .artistas:nth-child(3) {
+    background-image: url("/img/Drexler.avif");
+  }
+  .artistas:nth-child(4) {
+    background-image: url("/img/emmanuel.png");
+  }
+}
+
+.artistas {
+  .frase {
+    @include flex-c($justify: start, $align: start);
+    position: absolute;
+    z-index: 1000;
+    padding: 5px 10px;
+    bottom: 0px;
+    opacity: 0;
+    padding: $spacing-24px;
+    transition: opacity 0.3s ease-in-out;
+    text-align: start;
+    font-size: $spacing-24px;
+    font-style: italic;
+  }
+}
+
+.artistas::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)); 
+}
+.frase {
+  p {
+    text-align: start;
+    color: $color-white;
+  }
+}
+
+.frase {
+  span {
+    margin-top: $spacing-24px;
+    color: $color-grey-text;
   }
 }
 
@@ -145,3 +221,5 @@ h1 {
     height: auto;
   }
 }
+
+

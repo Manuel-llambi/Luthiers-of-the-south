@@ -1,0 +1,121 @@
+//  Hover
+
+@media (min-width: 375px) {
+  .primario:hover {
+    @include boton-secondary(
+      $color-font: $color-hover-primary,
+      $font-weight: $bold,
+      $border: solid 3px $color-hover-primary,
+      $background: transparent
+    );
+    cursor: pointer;
+  }
+  .musicos {
+    .artistas:hover {
+      width: 100%;
+      height: 500px;
+      flex: 3;
+      filter: brightness(100%);
+      background-position: center bottom 80%;
+      background-repeat: no-repeat;
+      transition: 0.3s ease-in-out;
+    }
+  }
+  .sub-our-work {
+    button:hover {
+      @include flex-r($gap: $spacing-8px);
+      padding: 0px;
+      transition: 0.3s ease-in-out;
+      cursor: pointer;
+    }
+  }
+  .sub-our-work {
+    button {
+      p {
+        color: $color-black;
+        font-weight: $bold;
+      }
+    }
+  }
+
+  .artistas:hover .frase {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+}
+
+@media (min-width: 768px) {
+  .primario:hover {
+    @include boton-secondary(
+      $color-font: $color-hover-primary,
+      $border: solid 3px $color-hover-primary
+    );
+  }
+  .musicos {
+    .artistas:hover {
+      width: 100%;
+      height: 500px;
+      flex: 3;
+      filter: brightness(100%);
+      background-position: center bottom 80%;
+      background-repeat: no-repeat;
+      transition: 0.3s ease-in-out;
+    }
+  }
+
+  .artistas:hover .frase {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+}
+
+@media (min-width: 1440px) {
+  .primario:hover {
+    @include boton-secondary(
+      $color-font: $color-hover-primary,
+
+      $font-weight: $bold,
+      $border: solid 3px $color-hover-primary,
+      $background: transparent
+    );
+    cursor: pointer;
+  }
+  .lista-secciones {
+    a:hover::after {
+      transform: scaleX(1);
+    }
+  }
+
+  .lista-secciones {
+    a:hover {
+      color: $color-primary-gold;
+    }
+  }
+
+  .musicos {
+    .artistas:hover {
+      width: 200%;
+      height: 100%;
+      filter: brightness(100%);
+      background-position: top;
+      transition: position 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;
+    }
+  }
+
+  .artistas:hover .frase {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .sign-up:hover {
+    background-color: $color-hover-primary;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  .sub-our-work {
+    button:hover {
+      cursor: pointer;
+    }
+  }
+}

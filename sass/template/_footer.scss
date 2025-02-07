@@ -1,32 +1,42 @@
-footer{
-    @include flex-c($padding: $spacing-70px $spacing-24px $spacing-32px $spacing-24px, $justify: start, $align: start, $gap: $spacing-32px);
-    background-color: $color-terciary-light-yellow;
+footer {
+  @include flex-c(
+    $padding: $spacing-70px $spacing-24px $spacing-32px $spacing-24px,
+    $justify: start,
+    $align: start,
+    $gap: $spacing-32px
+  );
+  background-color: $color-terciary-light-yellow;
 }
 
-.redes{
-    @include flex-c($align:start, $justify: start, $gap: $spacing-24px);
+.footer-seccion1 {
+  @include flex-c($align: start, $gap: $spacing-32px);
 }
 
-.redes{
-    div{
-        @include flex-r( $justify: start, $gap: $spacing-8px);
-        font-size: $spacing-12px;
-    }
+.redes {
+  @include flex-c($align: start, $justify: start, $gap: $spacing-24px);
 }
 
-.columnas{
-    @include flex-r($align: start, $justify: space-between);
-    width: 100%;
+.redes {
+  div {
+    @include flex-r($justify: start, $gap: $spacing-8px);
+    font-size: $small-12px;
+    text-align: start;
+  }
 }
 
-.categorias{
-    @include flex-c($align:start, $justify: start, $gap: $spacing-20px);
+.columnas {
+  @include flex-r($align: start, $justify: space-between);
+  width: 100%;
 }
 
-.categorias{
-    p{
-        text-align: start;
-        font-size: $small-12px;
-        margin-bottom: $spacing-20px;
-    }
+.categorias {
+  @include flex-c($align: start, $justify: start, $gap: $spacing-20px);
+}
+
+.categorias {
+  p {
+    text-align: start;
+    font-size: $small-12px;
+    margin-bottom: $spacing-20px;
+  }
 }

@@ -3,6 +3,7 @@
 @mixin flex-c($flex:column, $justify: space-between, $align: center, $gap: 0px, $padding:0px, $margin:0px){
     display: flex;
     flex-direction: $flex;
+    flex-direction: $flex;
     justify-content: $justify;
     align-items: $align;
     gap: $gap;
@@ -30,7 +31,7 @@
     background-color: $bg-color;
 }
 
-@mixin boton-secondary($color-font:$color-primary-gold, $pad:$spacing-24px $spacing-12px, $font-weight:$bold, $border: solid 3px $color-primary-gold, $background: transparent){
+@mixin boton-secondary($color-font:$color-primary-gold, $pad: $spacing-16px $spacing-20px, $font-weight:$bold, $border: solid 3px $color-primary-gold, $background: transparent){
     color: $color-font;
     padding: $pad;
     font-weight: $font-weight;

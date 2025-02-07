@@ -1,0 +1,503 @@
+@media (min-width: 768px) {
+  // General
+
+  section {
+    @include flex-c(
+      $gap: $spacing-60px,
+      $padding: $spacing-100px $spacing-70px $spacing-32px $spacing-70px
+    );
+    overflow: hidden;
+  }
+  .subtitulo {
+    @include flex-c(
+      $justify: start,
+      $align: start,
+      $gap: $spacing-20px,
+      $padding: 0px $spacing-52px
+    );
+  }
+
+  .subtitulo {
+    p {
+      font-size: 20px;
+      color: $color-grey-text;
+    }
+  }
+
+  // Navbar
+
+  h1 {
+    font-size: $semi-huge-48px;
+  }
+
+  h2 {
+    font-size: $big-28px;
+  }
+
+  h3 {
+    font-size: $big-28px;
+  }
+
+  h4 {
+    font-size: $semi-medium-24px;
+  }
+  h5 {
+    font-size: $media;
+  }
+  .logo {
+    p {
+      font-size: $media;
+    }
+  }
+
+  // Presentacion
+
+  .presentacion {
+    max-width: 700px;
+  }
+
+  .presentacion {
+    p {
+      font-size: $semi-medium-24px;
+    }
+  }
+
+  .primario {
+    font-size: $media;
+    @include boton-secondary();
+  }
+
+  // Values
+
+  .seccion-valores {
+    figure {
+      img {
+        width: 40%;
+        height: auto;
+      }
+    }
+  }
+  figcaption {
+    p {
+      text-align: start;
+      font-weight: $regular;
+      font-size: $media;
+    }
+  }
+
+  // Product gallery
+
+  .sub-our-work {
+    @include flex-r(
+      $gap: $spacing-20px,
+      $justify: space-between,
+      $align: start
+    );
+    width: 100%;
+  }
+  .lista-producto {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 528px);
+    grid-template-rows: 1fr;
+    overflow: auto;
+  }
+
+  .lista-producto::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  .card-producto {
+    @include flex-c($gap: 20px, $justify: start, $align: center);
+    width: 80%;
+  }
+  .aspectos span {
+    font-size: $semi-medium-24px;
+  }
+
+  .aspectos p {
+    font-size: $semi-medium-24px;
+  }
+
+  // Testimonies
+
+  .musicos {
+    @include flex-c($gap: $spacing-24px);
+    height: 1000px;
+    width: 80%;
+  }
+
+  .musicos {
+    .artistas {
+      display: flex;
+      flex: 1;
+      height: 200px;
+      position: relative;
+      width: 100%;
+      background-size: cover;
+      background-position: bottom;
+      transition: 0.3s ease-in-out;
+      filter: brightness(60%);
+    }
+
+    .artistas:nth-child(1) {
+      background-image: url("/img/mayer.png");
+    }
+    .artistas:nth-child(2) {
+      background-image: url("/img/julian.png");
+    }
+    .artistas:nth-child(3) {
+      background-image: url("/img/Drexler.avif");
+    }
+    .artistas:nth-child(4) {
+      background-image: url("/img/emmanuel.png");
+    }
+  }
+
+  .artistas {
+    .frase {
+      @include flex-c($justify: start, $align: start);
+      position: absolute;
+      z-index: 1000;
+      padding: 5px 10px;
+      bottom: 0px;
+      opacity: 0;
+      padding: $spacing-24px;
+      transition: opacity 0.3s ease-in-out;
+      text-align: start;
+      font-size: $spacing-24px;
+      font-style: italic;
+    }
+  }
+
+  .artistas::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  }
+  .frase {
+    p {
+      text-align: start;
+      color: $color-white;
+    }
+  }
+
+  .frase {
+    span {
+      margin-top: $spacing-24px;
+      color: $color-grey-text;
+    }
+  }
+
+  // Contact us
+
+  .fondo-form {
+    .subtitulo {
+      @include flex-c(
+        $justify: start,
+        $align: start,
+        $gap: $spacing-20px,
+        $padding: 0px
+      );
+    }
+  }
+
+  form {
+    max-width: 700px;
+  }
+
+  .fondo-form {
+    @include flex-c(
+      $gap: $spacing-60px,
+      $padding: $spacing-100px $spacing-70px $spacing-52px $spacing-70px,
+      $align: start
+    );
+  }
+
+  // Footer
+
+  footer {
+    @include flex-c(
+      $padding: $spacing-100px $spacing-70px $spacing-32px $spacing-70px,
+      $justify: start,
+      $align: start,
+      $gap: $spacing-60px
+    );
+    background-color: $color-terciary-light-yellow;
+  }
+
+  .footer-seccion1 {
+    @include flex-r(
+      $align: start,
+      $gap: $spacing-32px,
+      $justify: space-between
+    );
+    width: 100%;
+  }
+
+  .footer-seccion1 {
+    .logo-footer {
+      width: 170px;
+      height: auto;
+    }
+  }
+
+  .redes {
+    div {
+      @include flex-r($justify: start, $gap: $spacing-8px);
+      font-size: $semi-small-16px;
+    }
+  }
+
+  .categorias {
+    p {
+      font-size: $semi-small-16px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  // General
+
+  .presentacion {
+    max-width: 900px;
+    min-width: 372px;
+  }
+
+  h1 {
+    font-size: $semi-huge-48px;
+    font-weight: 200;
+  }
+
+  h3 {
+    font-size: $spacing-28px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  .subtitulo {
+    padding: 0px 150px;
+  }
+
+  .subtitulo p {
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  // Navbar
+
+  .navbar {
+    display: none;
+  }
+
+  .navbar-completa {
+    @include flex-r();
+    padding: $spacing-42px $spacing-70px;
+    background-color: transparent;
+  }
+
+  .lista-secciones {
+    @include flex-r($gap: $spacing-28px);
+  }
+
+  .lista-secciones {
+    a {
+      color: $color-white;
+      font-size: $media;
+      font-weight: $medium;
+      border-bottom: solid 0px white;
+      transition: 0.3s ease-in-out;
+      position: relative;
+    }
+  }
+  .lista-secciones {
+    a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+      width: 100%;
+      height: 2px;
+      background-color: $color-primary-gold;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease-in-out;
+    }
+  }
+
+  // Botones
+
+  .sign-up {
+    @include boton-primary($pad: $spacing-16px $spacing-24px);
+    font-size: $semi-medium-24px;
+    font-weight: $semi-bold;
+    border: none;
+  }
+  .botones-log {
+    .log-in {
+      @include boton-tericiary($pad: $spacing-16px $spacing-24px);
+      font-size: $semi-medium-24px;
+      font-weight: $semi-bold;
+      margin-right: $spacing-12px;
+    }
+  }
+
+  .sub-our-work {
+    button {
+      p {
+        font-size: $semi-medium-24px;
+      }
+    }
+  }
+
+  // Values
+
+  figure {
+    @include flex-r($justify: center, $gap: 162px);
+  }
+
+  figcaption {
+    @include flex-c($align: end, $gap: $spacing-16px);
+    border-right: solid 4px $color-primary-gold;
+    border-left: none;
+    padding-right: $spacing-16px;
+    width: 50%;
+  }
+
+  figcaption p {
+    text-align: end;
+    font-weight: 400;
+    font-size: $semi-medium-24px;
+  }
+
+  .inverso {
+    @include flex-c(
+      $gap: $spacing-16px,
+      $justify: start,
+      $align: start,
+      $padding: 0px 0px 0px $spacing-16px
+    );
+    border-left: solid 4px $color-primary-gold;
+    border-right: none;
+  }
+
+  .inverso {
+    p {
+      text-align: start;
+      font-weight: 400;
+      font-size: 1.5rem;
+    }
+  }
+
+  .value-inverso {
+    @include flex-r();
+    flex-direction: row-reverse;
+  }
+
+  h2.black {
+    font-size: $semi-big-32px;
+  }
+
+  // Product gallery
+
+  .lista-producto {
+    display: grid;
+    justify-items: space-between;
+    grid-template-columns: repeat(3, 700px);
+    grid-template-rows: 1fr;
+    overflow: auto;
+    justify-content: start;
+  }
+
+  .card-producto {
+    width: 630px;
+  }
+
+  .producto {
+    width: auto;
+    height: 700px;
+  }
+
+  // Testimonies
+
+  .musicos {
+    @include flex-r($gap: $spacing-24px);
+    width: 100%;
+    height: 639px;
+  }
+
+  .musicos {
+    .artistas {
+      filter: brightness(60%);
+      height: 639px;
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .artistas:nth-child(1) {
+      background-image: url("/img/mayer.png");
+    }
+    .artistas:nth-child(2) {
+      background-image: url("/img/julian.png");
+    }
+    .artistas:nth-child(3) {
+      background-image: url("/img/Drexler.avif");
+    }
+    .artistas:nth-child(4) {
+      background-image: url("/img/emmanuel.png");
+    }
+  }
+
+  // Form
+
+  form {
+    max-width: 740px;
+  }
+
+  .fondo-form {
+    .subtitulo {
+      @include flex-c(
+        $justify: start,
+        $align: start,
+        $gap: $spacing-20px,
+        $padding: 0px 150px
+      );
+    }
+  }
+
+  .fondo-form {
+    @include flex-c(
+      $gap: $spacing-60px,
+      $padding: $spacing-100px $spacing-70px $spacing-52px $spacing-70px,
+      $align: center,
+      $justify: center
+    );
+  }
+
+  // Footer
+
+  footer {
+    @include flex-r(
+      $padding: $spacing-70px $spacing-70px $spacing-52px $spacing-70px,
+      $justify: space-between,
+      $align: start,
+      $gap: $spacing-70px
+    );
+    background-color: $color-terciary-light-yellow;
+  }
+
+  .footer-seccion1 {
+    @include flex-c($justify: start, $align: start, $gap: $spacing-32px);
+  }
+
+  .columnas {
+    @include flex-r($justify: end, $gap: 300px, $align: start);
+  }
+}

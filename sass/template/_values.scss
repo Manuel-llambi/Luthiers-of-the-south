@@ -12,12 +12,14 @@ figcaption {
     p {
       text-align: start;
       font-weight: $regular;
+      font-size: $semi-small-16px;
+      color: $color-grey-text;
     }
   }
   .seccion-valores {
     figure {
       img {
-        width: 100%;
+        width: 80%;
         height: auto;
         border-radius: $radius-8px;
         border-bottom: $spacing-12px solid $color-primary-gold;

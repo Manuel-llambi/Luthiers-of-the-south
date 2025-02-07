@@ -14,6 +14,7 @@
     font-size: $font-elegant;
     color: $color-white;
     text-align: start;
+    font-family: $font-elegant;
   }
 }
 
@@ -22,4 +23,11 @@
     border-right: solid 1px white;
     padding-right: 4px;
   }
+}
+
+
+// Navbar completa
+
+.navbar-completa{
+  display: none;
 }
