@@ -1,6 +1,32 @@
+// Carusel logos
+
 .carusel-logos {
   width: 100%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  // animation
+  background: #fff;
+  padding: 20px 0;
+  position: relative;
+  @include flex-r();
+  align-items: center;
+  margin-bottom: $spacing-20px
+
+}
+
+.carusel-interno {
+  @include flex-r(); /* Ajusta según la cantidad de logos */
+  animation: scroll 15s linear infinite;
+}
+
+.carousel-track img {
+  width: 150px; /* Tamaño de los logos */
+  margin: 0 10px;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }

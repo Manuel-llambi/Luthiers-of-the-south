@@ -32,5 +32,6 @@
   @include boton-primary();
   width: 100%;
   font-size: $media;
+  transition: 0.3s ease-in-out;
     
 }

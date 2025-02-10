@@ -1,5 +1,10 @@
+@charset "UTF-8";
 html {
   scroll-behavior: smooth; /* Desplazamiento suave */
+}
+
+#ancla-2 {
+  margin-top: 100px;
 }
 
 * {
@@ -64,6 +69,8 @@ figcaption p {
     margin: 0px;
     padding: 6.25rem 4.375rem 2rem 4.375rem;
     overflow: hidden;
+    scroll-margin-top: 100px;
+    padding-top: 100px; /* Espacio para evitar que el navbar lo tape */
   }
   .subtitulo {
     display: flex;
@@ -112,14 +119,66 @@ figcaption p {
     border-radius: 8px;
     background-color: transparent;
   }
+  figure {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    margin: 0px;
+    padding: 0px;
+  }
+  figcaption {
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    gap: 1rem;
+    margin: 0px;
+    padding: 0px;
+    border-right: solid 4px #f0b873;
+    border-left: none;
+    padding-right: 1rem;
+    width: 50%;
+  }
   .seccion-valores figure img {
     width: 40%;
     height: auto;
   }
-  figcaption p {
+  .inverso p {
     text-align: start;
     font-weight: 400;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+  }
+  .value-inverso {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0px;
+    margin: 0px;
+    padding: 0px;
+    flex-direction: row-reverse;
+  }
+  .inverso {
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 1rem;
+    margin: 0px;
+    padding: 0px 0px 0px 1rem;
+    border-left: solid 4px #f0b873;
+    border-right: none;
+  }
+  figcaption p {
+    text-align: end;
+    font-size: 1.5rem;
+  }
+  h3 {
+    text-align: end;
   }
   .sub-our-work {
     display: flex;
@@ -133,10 +192,12 @@ figcaption p {
   }
   .lista-producto {
     display: grid;
-    justify-items: center;
-    grid-template-columns: repeat(3, 528px);
+    justify-content: start;
+    align-items: center;
+    grid-template-columns: repeat(3, 530px);
     grid-template-rows: 1fr;
     overflow: auto;
+    height: 1000px;
   }
   .lista-producto::-webkit-scrollbar {
     width: 0px;
@@ -151,6 +212,8 @@ figcaption p {
     margin: 0px;
     padding: 0px;
     width: 80%;
+    padding: 20px;
+    transition: 0.3s ease-in-out;
   }
   .aspectos span {
     font-size: 1.5rem;
@@ -275,7 +338,7 @@ figcaption p {
     width: 100%;
   }
   .footer-seccion1 .logo-footer {
-    width: 170px;
+    width: 200px;
     height: auto;
   }
   .redes div {
@@ -293,6 +356,10 @@ figcaption p {
   }
 }
 @media (min-width: 1440px) {
+  .primera-screen {
+    padding-top: 230px;
+    height: 87vh;
+  }
   .presentacion {
     max-width: 900px;
     min-width: 372px;
@@ -326,7 +393,6 @@ figcaption p {
     margin: 0px;
     padding: 0px;
     padding: 42px 4.375rem;
-    background-color: transparent;
   }
   .lista-secciones {
     display: flex;
@@ -445,9 +511,12 @@ figcaption p {
     grid-template-rows: 1fr;
     overflow: auto;
     justify-content: start;
+    align-items: center;
+    height: 1000px;
   }
   .card-producto {
     width: 630px;
+    transition: 0.3s ease-in-out;
   }
   .producto {
     width: auto;
@@ -538,6 +607,10 @@ figcaption p {
 }
 html {
   scroll-behavior: smooth; /* Desplazamiento suave */
+}
+
+#ancla-2 {
+  margin-top: 100px;
 }
 
 * {
@@ -653,6 +726,12 @@ figcaption p {
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
   }
+  .card-producto:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+  }
 }
 @media (min-width: 1440px) {
   .primario:hover {
@@ -690,7 +769,29 @@ figcaption p {
   .sub-our-work button:hover {
     cursor: pointer;
   }
+  .card-producto:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+  }
 }
+.menu ul li:hover {
+  background-color: #5e3400;
+  color: #fffae9;
+  transition: 0.3s ease-in-out;
+}
+
+.menu ul li a:hover {
+  color: #fffae9;
+}
+
+.enviar:hover {
+  background-color: #e49636;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
 .fondo {
   background-image: url(/img/foondo.png);
   background-repeat: no-repeat;
@@ -702,10 +803,46 @@ figcaption p {
 
 .carusel-logos {
   width: 100%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  background: #fff;
+  padding: 20px 0;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0px;
+  margin: 0px;
+  padding: 0px;
+  align-items: center;
+  margin-bottom: 1.25rem;
 }
 
+.carusel-interno {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0px;
+  margin: 0px;
+  padding: 0px;
+  /* Ajusta según la cantidad de logos */
+  animation: scroll 15s linear infinite;
+}
+
+.carousel-track img {
+  width: 150px; /* Tamaño de los logos */
+  margin: 0 10px;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
 form {
   display: flex;
   flex-direction: column;
@@ -1068,6 +1205,116 @@ h1 i {
   height: auto;
 }
 
+.menu-container {
+  position: relative;
+}
+
+.menu-container img {
+  position: absolute;
+  display: flex;
+  cursor: pointer;
+}
+
+.menu-icon .line {
+  height: 5px;
+  width: 100%;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 0px;
+  margin: 0px;
+  padding: 0px;
+  position: fixed;
+  top: 0;
+  left: -375px; /* Se posiciona fuera de la pantalla */
+  width: 375px;
+  height: 100%;
+  background-color: #fffae9;
+  transition: left 0.3s ease;
+  z-index: 3000;
+}
+
+.menu.active {
+  left: 0; /* Desliza el menú hacia la pantalla */
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 0px;
+  margin: 0px;
+  padding: 0px;
+  margin-top: 150px;
+  width: 100%;
+}
+
+.menu ul li {
+  margin: 20px 0;
+  padding: 12px 20px;
+  width: 100%;
+  transition: 0.3s ease-in-out;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #5e3400;
+  font-size: 1.5rem;
+  text-align: start;
+  font-weight: 500;
+  display: block;
+  transition: color 0.3s;
+}
+
+.close-icon {
+  font-size: 30px;
+  color: #5e3400;
+  cursor: pointer;
+  z-index: 2; /* Asegura que la cruz esté encima de los enlaces */
+}
+
+.encabezado-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0px;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  width: 100%;
+  padding: 2rem;
+}
+
+#logo-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4px;
+  margin: 0px;
+  padding: 0px;
+}
+
+#logo-menu p {
+  color: #5e3400;
+}
+
+.menu div p {
+  color: #5e3400;
+  font-size: 20px;
+  padding: 20px;
+}
+
 .primario {
   display: flex;
   flex-direction: row;
@@ -1128,6 +1375,7 @@ h1 i {
   background-color: #f0b873;
   width: 100%;
   font-size: 1.25rem;
+  transition: 0.3s ease-in-out;
 }
 
 figure {
@@ -1266,6 +1514,8 @@ figcaption p {
     margin: 0px;
     padding: 6.25rem 4.375rem 2rem 4.375rem;
     overflow: hidden;
+    scroll-margin-top: 100px;
+    padding-top: 100px; /* Espacio para evitar que el navbar lo tape */
   }
   .subtitulo {
     display: flex;
@@ -1314,14 +1564,66 @@ figcaption p {
     border-radius: 8px;
     background-color: transparent;
   }
+  figure {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    margin: 0px;
+    padding: 0px;
+  }
+  figcaption {
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    gap: 1rem;
+    margin: 0px;
+    padding: 0px;
+    border-right: solid 4px #f0b873;
+    border-left: none;
+    padding-right: 1rem;
+    width: 50%;
+  }
   .seccion-valores figure img {
     width: 40%;
     height: auto;
   }
-  figcaption p {
+  .inverso p {
     text-align: start;
     font-weight: 400;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+  }
+  .value-inverso {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0px;
+    margin: 0px;
+    padding: 0px;
+    flex-direction: row-reverse;
+  }
+  .inverso {
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 1rem;
+    margin: 0px;
+    padding: 0px 0px 0px 1rem;
+    border-left: solid 4px #f0b873;
+    border-right: none;
+  }
+  figcaption p {
+    text-align: end;
+    font-size: 1.5rem;
+  }
+  h3 {
+    text-align: end;
   }
   .sub-our-work {
     display: flex;
@@ -1335,10 +1637,12 @@ figcaption p {
   }
   .lista-producto {
     display: grid;
-    justify-items: center;
-    grid-template-columns: repeat(3, 528px);
+    justify-content: start;
+    align-items: center;
+    grid-template-columns: repeat(3, 530px);
     grid-template-rows: 1fr;
     overflow: auto;
+    height: 1000px;
   }
   .lista-producto::-webkit-scrollbar {
     width: 0px;
@@ -1353,6 +1657,8 @@ figcaption p {
     margin: 0px;
     padding: 0px;
     width: 80%;
+    padding: 20px;
+    transition: 0.3s ease-in-out;
   }
   .aspectos span {
     font-size: 1.5rem;
@@ -1477,7 +1783,7 @@ figcaption p {
     width: 100%;
   }
   .footer-seccion1 .logo-footer {
-    width: 170px;
+    width: 200px;
     height: auto;
   }
   .redes div {
@@ -1495,6 +1801,10 @@ figcaption p {
   }
 }
 @media (min-width: 1440px) {
+  .primera-screen {
+    padding-top: 230px;
+    height: 87vh;
+  }
   .presentacion {
     max-width: 900px;
     min-width: 372px;
@@ -1528,7 +1838,6 @@ figcaption p {
     margin: 0px;
     padding: 0px;
     padding: 42px 4.375rem;
-    background-color: transparent;
   }
   .lista-secciones {
     display: flex;
@@ -1647,9 +1956,12 @@ figcaption p {
     grid-template-rows: 1fr;
     overflow: auto;
     justify-content: start;
+    align-items: center;
+    height: 1000px;
   }
   .card-producto {
     width: 630px;
+    transition: 0.3s ease-in-out;
   }
   .producto {
     width: auto;

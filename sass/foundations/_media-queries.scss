@@ -7,7 +7,10 @@
       $padding: $spacing-100px $spacing-70px $spacing-32px $spacing-70px
     );
     overflow: hidden;
+    scroll-margin-top: 100px;
+    padding-top: 100px; /* Espacio para evitar que el navbar lo tape */
   }
+
   .subtitulo {
     @include flex-c(
       $justify: start,
@@ -69,6 +72,18 @@
 
   // Values
 
+  figure {
+    @include flex-r($justify: center, $gap: 70px);
+  }
+
+  figcaption {
+    @include flex-c($align: end, $gap: $spacing-16px);
+    border-right: solid 4px $color-primary-gold;
+    border-left: none;
+    padding-right: $spacing-16px;
+    width: 50%;
+  }
+
   .seccion-valores {
     figure {
       img {
@@ -77,12 +92,39 @@
       }
     }
   }
-  figcaption {
+
+  .inverso {
     p {
       text-align: start;
       font-weight: $regular;
-      font-size: $media;
+      font-size: $spacing-24px;
     }
+  }
+
+  .value-inverso {
+    @include flex-r();
+    flex-direction: row-reverse;
+  }
+  .inverso {
+    @include flex-c(
+      $gap: $spacing-16px,
+      $justify: start,
+      $align: start,
+      $padding: 0px 0px 0px $spacing-16px
+    );
+    border-left: solid 4px $color-primary-gold;
+    border-right: none;
+  }
+
+  figcaption {
+    p {
+      text-align: end;
+      font-size: $spacing-24px;
+    }
+  }
+
+  h3 {
+    text-align: end;
   }
 
   // Product gallery
@@ -97,10 +139,12 @@
   }
   .lista-producto {
     display: grid;
-    justify-items: center;
-    grid-template-columns: repeat(3, 528px);
+    justify-content: start;
+    align-items: center;
+    grid-template-columns: repeat(3, 530px);
     grid-template-rows: 1fr;
     overflow: auto;
+    height: 1000px;
   }
 
   .lista-producto::-webkit-scrollbar {
@@ -110,6 +154,8 @@
   .card-producto {
     @include flex-c($gap: 20px, $justify: start, $align: center);
     width: 80%;
+    padding: 20px;
+    transition: 0.3s ease-in-out;
   }
   .aspectos span {
     font-size: $semi-medium-24px;
@@ -241,7 +287,7 @@
 
   .footer-seccion1 {
     .logo-footer {
-      width: 170px;
+      width: 200px;
       height: auto;
     }
   }
@@ -262,7 +308,10 @@
 
 @media (min-width: 1440px) {
   // General
-
+  .primera-screen {
+    padding-top: 230px;
+    height: 87vh;
+  }
   .presentacion {
     max-width: 900px;
     min-width: 372px;
@@ -299,7 +348,6 @@
   .navbar-completa {
     @include flex-r();
     padding: $spacing-42px $spacing-70px;
-    background-color: transparent;
   }
 
   .lista-secciones {
@@ -373,7 +421,7 @@
   figcaption p {
     text-align: end;
     font-weight: 400;
-    font-size: $semi-medium-24px;
+    font-size: $spacing-24px;
   }
 
   .inverso {
@@ -413,10 +461,13 @@
     grid-template-rows: 1fr;
     overflow: auto;
     justify-content: start;
+    align-items: center;
+    height: 1000px;
   }
 
   .card-producto {
     width: 630px;
+    transition: 0.3s ease-in-out;
   }
 
   .producto {

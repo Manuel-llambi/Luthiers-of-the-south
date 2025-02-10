@@ -3,7 +3,9 @@
  html {
     scroll-behavior: smooth; /* Desplazamiento suave */
   }
-
+#ancla-2{
+  margin-top: 100px
+}
 
 * {
   margin: 0px;
@@ -13,6 +15,7 @@
   font-family: "Montserrat", serif;
   list-style: none;
   text-decoration: none;
+  // border: 1px solid red;
 }
 
 // Tipografia
