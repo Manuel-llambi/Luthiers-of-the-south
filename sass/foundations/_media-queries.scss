@@ -187,16 +187,16 @@
     }
 
     .artistas:nth-child(1) {
-      background-image: url("/img/mayer.png");
+      background-image: url("../img/mayer.png");
     }
     .artistas:nth-child(2) {
-      background-image: url("/img/julian.png");
+      background-image: url("../img/julian.png");
     }
     .artistas:nth-child(3) {
-      background-image: url("/img/Drexler.avif");
+      background-image: url("../img/Drexler.avif");
     }
     .artistas:nth-child(4) {
-      background-image: url("/img/emmanuel.png");
+      background-image: url("../img/emmanuel.png");
     }
   }
 
@@ -309,7 +309,7 @@
 @media (min-width: 1440px) {
   // General
   .primera-screen {
-    padding-top: 230px;
+  
     height: 87vh;
   }
   .presentacion {
@@ -393,6 +393,7 @@
       font-size: $semi-medium-24px;
       font-weight: $semi-bold;
       margin-right: $spacing-12px;
+      cursor: pointer;
     }
   }
 
@@ -493,16 +494,16 @@
     }
 
     .artistas:nth-child(1) {
-      background-image: url("/img/mayer.png");
+      background-image: url("../img/mayer.png");
     }
     .artistas:nth-child(2) {
-      background-image: url("/img/julian.png");
+      background-image: url("../img/julian.png");
     }
     .artistas:nth-child(3) {
-      background-image: url("/img/Drexler.avif");
+      background-image: url("../img/Drexler.avif");
     }
     .artistas:nth-child(4) {
-      background-image: url("/img/emmanuel.png");
+      background-image: url("../img/emmanuel.png");
     }
   }
 

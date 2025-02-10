@@ -245,16 +245,16 @@ figcaption p {
     filter: brightness(60%);
   }
   .musicos .artistas:nth-child(1) {
-    background-image: url("/img/mayer.png");
+    background-image: url("../img/mayer.png");
   }
   .musicos .artistas:nth-child(2) {
-    background-image: url("/img/julian.png");
+    background-image: url("../img/julian.png");
   }
   .musicos .artistas:nth-child(3) {
-    background-image: url("/img/Drexler.avif");
+    background-image: url("../img/Drexler.avif");
   }
   .musicos .artistas:nth-child(4) {
-    background-image: url("/img/emmanuel.png");
+    background-image: url("../img/emmanuel.png");
   }
   .artistas .frase {
     display: flex;
@@ -357,7 +357,6 @@ figcaption p {
 }
 @media (min-width: 1440px) {
   .primera-screen {
-    padding-top: 230px;
     height: 87vh;
   }
   .presentacion {
@@ -442,6 +441,7 @@ figcaption p {
     font-size: 1.5rem;
     font-weight: 600;
     margin-right: 0.75rem;
+    cursor: pointer;
   }
   .sub-our-work button p {
     font-size: 1.5rem;
@@ -541,16 +541,16 @@ figcaption p {
     background-position: center;
   }
   .musicos .artistas:nth-child(1) {
-    background-image: url("/img/mayer.png");
+    background-image: url("../img/mayer.png");
   }
   .musicos .artistas:nth-child(2) {
-    background-image: url("/img/julian.png");
+    background-image: url("../img/julian.png");
   }
   .musicos .artistas:nth-child(3) {
-    background-image: url("/img/Drexler.avif");
+    background-image: url("../img/Drexler.avif");
   }
   .musicos .artistas:nth-child(4) {
-    background-image: url("/img/emmanuel.png");
+    background-image: url("../img/emmanuel.png");
   }
   form {
     max-width: 740px;
@@ -793,7 +793,7 @@ figcaption p {
 }
 
 .fondo {
-  background-image: url(/img/foondo.png);
+  background-image: url(../img/foondo.png);
   background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
@@ -1690,16 +1690,16 @@ figcaption p {
     filter: brightness(60%);
   }
   .musicos .artistas:nth-child(1) {
-    background-image: url("/img/mayer.png");
+    background-image: url("../img/mayer.png");
   }
   .musicos .artistas:nth-child(2) {
-    background-image: url("/img/julian.png");
+    background-image: url("../img/julian.png");
   }
   .musicos .artistas:nth-child(3) {
-    background-image: url("/img/Drexler.avif");
+    background-image: url("../img/Drexler.avif");
   }
   .musicos .artistas:nth-child(4) {
-    background-image: url("/img/emmanuel.png");
+    background-image: url("../img/emmanuel.png");
   }
   .artistas .frase {
     display: flex;
@@ -1802,7 +1802,6 @@ figcaption p {
 }
 @media (min-width: 1440px) {
   .primera-screen {
-    padding-top: 230px;
     height: 87vh;
   }
   .presentacion {
@@ -1887,6 +1886,7 @@ figcaption p {
     font-size: 1.5rem;
     font-weight: 600;
     margin-right: 0.75rem;
+    cursor: pointer;
   }
   .sub-our-work button p {
     font-size: 1.5rem;
@@ -1986,16 +1986,16 @@ figcaption p {
     background-position: center;
   }
   .musicos .artistas:nth-child(1) {
-    background-image: url("/img/mayer.png");
+    background-image: url("../img/mayer.png");
   }
   .musicos .artistas:nth-child(2) {
-    background-image: url("/img/julian.png");
+    background-image: url("../img/julian.png");
   }
   .musicos .artistas:nth-child(3) {
-    background-image: url("/img/Drexler.avif");
+    background-image: url("../img/Drexler.avif");
   }
   .musicos .artistas:nth-child(4) {
-    background-image: url("/img/emmanuel.png");
+    background-image: url("../img/emmanuel.png");
   }
   form {
     max-width: 740px;
